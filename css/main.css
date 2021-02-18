@@ -72,3 +72,15 @@ a {
     color: inherit;
     text-transform: uppercase;
     font-size: 1.75rem; }
+    .nav__link::after {
+      content: '';
+      display: block;
+      height: 1px;
+      width: 0;
+      opacity: 0;
+      background-color: white;
+      -webkit-transition: all .3s ease;
+      transition: all .3s ease; }
+    .nav__link:hover::after {
+      width: 100%;
+      opacity: 1; }
