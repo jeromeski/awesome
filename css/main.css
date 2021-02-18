@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400&display=swap");
 *, *::before, *::after {
   margin: 0;
   padding: 0; }
 
 html {
   font-size: 62.5%; }
+
+body {
+  font-family: 'Alegreya Sans', sans-serif; }
 
 /* --> HEADER
 ================================ */
@@ -23,6 +27,6 @@ html {
     height: 6rem;
     width: 6rem;
     border: solid 2px white;
+    border-radius: 100%;
     text-align: center;
-    line-height: 6rem;
-    border-radius: 100%; }
+    line-height: 6rem; }
