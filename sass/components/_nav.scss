@@ -7,7 +7,6 @@
     display: block;
     color: white;
     font-size: 2.6rem;
-    text-decoration: none;
     height: 6rem;
     width: 6rem;
     border: solid 2px white;
@@ -16,5 +15,19 @@
     text-align: center;
     line-height: 6rem;
     
+  }
+
+  &__list {
+    color: white
+  }
+
+  &__item {
+    color: inherit;
+  }
+
+  &__link {
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 1.7rem;
   }
 }
