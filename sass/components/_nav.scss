@@ -1,0 +1,19 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(black, .5);
+
+  &__logo {
+    display: block;
+    color: white;
+    font-size: 2.6rem;
+    text-decoration: none;
+    height: 6rem;
+    width: 6rem;
+    border: solid 2px white;
+    // TRICK TO VERTICALLY ALIGN LOGO
+    text-align: center;
+    line-height: 6rem;
+    border-radius: 100%;
+  }
+}

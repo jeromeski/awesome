@@ -1,9 +1,28 @@
-body {
+*, *::before, *::after {
   margin: 0;
   padding: 0; }
+
+html {
+  font-size: 62.5%; }
 
 /* --> HEADER
 ================================ */
 .aw-main-banner {
   display: block;
   width: 100%; }
+
+.nav {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .nav__logo {
+    display: block;
+    color: white;
+    font-size: 2.6rem;
+    text-decoration: none;
+    height: 6rem;
+    width: 6rem;
+    border: solid 2px white;
+    text-align: center;
+    line-height: 6rem;
+    border-radius: 100%; }
