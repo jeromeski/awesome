@@ -3,6 +3,10 @@
   margin: 0;
   padding: 0; }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
 html {
   font-size: 62.5%; }
 
@@ -24,7 +28,20 @@ a {
 .nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem; }
+  .nav__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .nav__logo {
     display: block;
     color: white;
@@ -33,13 +50,25 @@ a {
     width: 6rem;
     border: solid 2px white;
     border-radius: 100%;
-    text-align: center;
-    line-height: 6rem; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .nav__list {
-    color: white; }
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .nav__list > *:not(:last-child) {
+      margin-right: 2rem; }
   .nav__item {
     color: inherit; }
   .nav__link {
     color: inherit;
     text-transform: uppercase;
-    font-size: 1.7rem; }
+    font-size: 1.75rem; }

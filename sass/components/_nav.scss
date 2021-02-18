@@ -2,6 +2,15 @@
   position: fixed;
   width: 100%;
   background-color: rgba(black, .5);
+  padding: 1rem;
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto;
+    align-items: center;
+  }
 
   &__logo {
     display: block;
@@ -12,13 +21,21 @@
     border: solid 2px white;
     border-radius: 100%;
     // TRICK TO VERTICALLY ALIGN LOGO
-    text-align: center;
-    line-height: 6rem;
+    // text-align: center;
+    // line-height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
 
   &__list {
-    color: white
+    color: white;
+    display: flex;
+
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
   }
 
   &__item {
@@ -28,6 +45,6 @@
   &__link {
     color: inherit;
     text-transform: uppercase;
-    font-size: 1.7rem;
+    font-size: 1.75rem;
   }
 }
